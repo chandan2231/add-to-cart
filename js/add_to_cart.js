@@ -2,7 +2,6 @@
 function addKeyValue(obj, key, data){
   obj[key] = data;
 }
-
 let products = [];
 
 //Show the product list on the main page
@@ -75,6 +74,10 @@ const handleAddToCart = (clickedItem) => {
           	let updatedItemData = {}
           	updatedItemData = {id: event.id, name: event.name, image: event.image, actual:event.actual, display: event.display, amount: 1 }
           	cart.push(updatedItemData);
+          	$("#success_msg").html('<span class="success_box">'+event.name+' is added to cart</span>')
+          	setTimeout(function(){
+			    document.getElementById("success_msg").innerHTML = '';
+			}, 2000);
         }
     })
   	console.log("cartcartcart", cart)

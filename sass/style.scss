@@ -13,6 +13,8 @@ body {
 	color: $color;
     margin-top: 10px;
     margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
 }
 .page_title{
 	font-size: 18px;
@@ -21,6 +23,17 @@ body {
 	float: left;
 	margin:0;
 	padding-bottom: 10px;
+	width: 50%
+}
+.success_box{
+	font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    float: left;
+    margin: 0;
+    padding-bottom: 10px;
+    background: #008000;
+    padding: 5px;
 }
 .product_section{
 	width: 65%;
